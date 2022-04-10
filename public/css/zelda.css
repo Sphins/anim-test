@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family-Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #2f363e;
+}
+h1
+{
+    font-size: 4em;
+    padding: 20px 0 50px;
+    color: #00ff0a;
+    text-shadow:0 0 10px #00ff0a,
+    0 0 20px #00ff0a;
+    animation: animateColor 8s linear infinite;
+}
+@keyframes animateColor
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+label
+{
+    font-size: 2em;
+    padding: 20px 0 150px;
+    color: #ff2972;
+    text-shadow:0 0 10px #ff2972,
+    0 0 20px #ff2972;
+    animation: animateColor 8s linear infinite;
+}
+ul
+{
+    list-style-type: none;
+    text-align: center;
+}
+li
+{
+    padding: 5px;
+}
+a
+{
+    outline: none;
+    text-decoration: none;
+}
+a:link
+{
+    color: #ff2972;
+}
+a:visited
+{
+    color: #fee800;
+}
+a:focus, a:hover
+{
+    color: #fee800;
+    text-shadow:0 0 10px #fee800,
+    0 0 20px #fee800;
+}

@@ -133,3 +133,32 @@ section
     background: rgba(0,0,0,0.5);
     border-radius: 50%;
 }
+.lien
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background: #121212; 
+}
+a
+{
+    flex-direction: column;
+    padding: 25px;
+    outline: none;
+    text-decoration: none;
+}
+a:link
+{
+    color: #ff2972;
+}
+a:visited
+{
+    color: #fee800;
+}
+a:focus, a:hover
+{
+    color: #fee800;
+    text-shadow:0 0 10px #fee800,
+    0 0 20px #fee800;
+}
