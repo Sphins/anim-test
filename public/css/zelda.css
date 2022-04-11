@@ -45,29 +45,42 @@ label
 }
 ul
 {
-    list-style-type: none;
-    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
 }
-li
+ul li
 {
-    padding: 5px;
+    position: relative;
+    list-style: none;
 }
-a
+ul li a
 {
-    outline: none;
+    position: relative;
+    font-size: 4em;
     text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.5);
 }
-a:link
+ul li a::before
 {
-    color: #ff2972;
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow:hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr) ;
+    -webkit-text-stroke: 1px var(--clr);
+
 }
-a:visited
+ul li a:hover:before
 {
-    color: #fee800;
-}
-a:focus, a:hover
-{
-    color: #fee800;
-    text-shadow:0 0 10px #fee800,
-    0 0 20px #fee800;
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
 }
